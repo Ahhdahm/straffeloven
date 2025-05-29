@@ -24,7 +24,7 @@ body {
 
 .kapitelnavn {
   font-size: 1.4rem;
-  color: black
+  color: black;
   margin-top: 1.5rem;
 }
 
@@ -48,13 +48,21 @@ body {
   text-align: justify;
 }
 
+a {
+  color: black
+}
+
+a:hover {
+  color: #005;
+  text-decoration: none;
+}
 li {
   margin-left: 0em; /* Giver indrykning */
   margin-bottom: 0.5em; /* Lidt luft under hvert punkt */
   font-size: 1rem;
   color: black;
   line-height: 1.3;
-  text-align: justify
+  text-align: justify;
   word-break: break-word;
 }
 .popup-wrapper {
@@ -65,7 +73,7 @@ li {
   position: relative;
   cursor: pointer;
   color: #005;
-  text-decoration: underline dotted;
+
 }
 
 .paragraf-popup {
@@ -94,13 +102,10 @@ li {
   margin-bottom: 0.5em;
   border-radius: 4px;
   font-size: 0.97em;
+  text-align: left;
 }
 .dropdown-toggle {
-  margin-left: 1em;
-  font-size: 0.95em;
+  font-size: 1rem;
   cursor: pointer;
-  background: #e7e7e7;
-  border: 1px solid #bbb;
   border-radius: 3px;
-  padding: 0.2em 0.7em;
 }
