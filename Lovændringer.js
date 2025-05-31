@@ -11,3 +11,22 @@ document.querySelectorAll('.dropdown-toggle').forEach(function(el) {
   });
 });
 
+document.querySelectorAll('.del-toggle').forEach(function(toggle) {
+  toggle.addEventListener('click', function() {
+    var content = toggle.nextElementSibling;
+    var isOpen = content.style.display === "block";
+    if (!isOpen) {
+      content.style.display = "block";
+      toggle.classList.add('open');
+    } else {
+      content.style.display = "none";
+      toggle.classList.remove('open');
+    }
+  });
+});
+
+// Sørg for at del-content vises fra start (eller sæt style="display:block;" i HTML)
+document.querySelectorAll('.del-content').forEach(function(content) {
+  content.style.display = "block";
+});
+
